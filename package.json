@@ -1,14 +1,15 @@
 {
-  "name": "@dalai426/upoint-logger",
+  "name": "@gadalai426/upoint-logger",
   "version": "0.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "repository": {
+    "type":"git",
     "url": "https://github.com/Dalai426/ULogger.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/@gadalai426"
+    "@gadalai426:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "tsup"
