@@ -1,9 +1,12 @@
 {
-  "name": "upoint-logger-pack",
+  "name": "@dalai426/upoint-logger",
   "version": "0.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/Dalai426/ULogger.git"
+  },
   "publishConfig": {
     "registry":"https://npm.pkg.github.com/@gadalai426"
   },
