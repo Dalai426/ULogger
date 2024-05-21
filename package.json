@@ -5,7 +5,7 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "repository": {
-    "type":"git",
+    "type": "git",
     "url": "git+https://github.com/Dalai426/ULogger.git"
   },
   "scripts": {
@@ -16,7 +16,12 @@
   "license": "ISC",
   "description": "U Point microservice's logger tool",
   "devDependencies": {
+    "@types/luxon": "^3.4.2",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@dalai426/upoint-logger": "^0.0.1",
+    "luxon": "^2.5.0"
   }
 }
