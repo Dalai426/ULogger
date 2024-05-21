@@ -25,6 +25,7 @@
     "luxon": "^3.4.4"
   },
   "dependencies": {
+    "@dalai426/upoint-logger": "^0.0.1",
     "winston": "^3.13.0",
     "winston-elasticsearch": "^0.19.0"
   }
