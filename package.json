@@ -17,10 +17,15 @@
   "description": "U Point microservice's logger tool",
   "devDependencies": {
     "@types/luxon": "^3.4.2",
+    "@types/node": "^20.12.12",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "luxon": "^3.4.4"
+  },
+  "dependencies": {
+    "winston": "^3.13.0",
+    "winston-elasticsearch": "^0.19.0"
   }
 }

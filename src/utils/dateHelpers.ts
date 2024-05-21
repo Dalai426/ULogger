@@ -8,7 +8,6 @@ function now(): Date {
     )
 }
 
-
 export default {
     now
 }
