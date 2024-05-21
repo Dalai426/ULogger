@@ -21,7 +21,9 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@dalai426/upoint-logger": "^0.0.1",
+    "@dalai426/upoint-logger": "^0.0.1"
+  },
+  "peerDependencies": {
     "luxon": "^2.5.0"
   }
 }
