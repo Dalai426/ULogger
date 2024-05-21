@@ -16,14 +16,7 @@
   "license": "ISC",
   "description": "U Point microservice's logger tool",
   "devDependencies": {
-    "@types/luxon": "^3.4.2",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
-  },
-  "dependencies": {
-    "@dalai426/upoint-logger": "^0.0.1"
-  },
-  "peerDependencies": {
-    "luxon": "^2.5.0"
   }
 }
