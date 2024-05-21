@@ -34,6 +34,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
       - run: npm run build
-      - run: npm unpublish upoint-logger@0.0.2
+      - run: npm unpublish @dalai426/upoint-logger@0.0.2
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
