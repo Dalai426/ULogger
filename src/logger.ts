@@ -32,7 +32,7 @@ export class ULogger {
         this.logger = winston.createLogger({
             level: process.env.LOG_LEVEL || 'silly',
             exitOnError: function globalPipe(ex: Error) {
-                this.winston.error('error', ex.message, {
+                winston.error('error', ex.message, {
                     metadata: 'GLOBAL-PIPE-ERROR'
                 })
                 return false
@@ -69,8 +69,8 @@ export class ULogger {
 
         this.logger.on('error', (err: Error) => {
             // eslint-disable-next-line no-console
-            console.log('Winston is dead. Console log talking here.')
-            this.logger.error(err.stack, {
+            const errorStack = err.stack ?? err.message;
+            this.logger.error(errorStack, {
                 metadata: 'WINSTON-LOGGER-ERROR'
             })
         })
@@ -86,8 +86,7 @@ export class ULogger {
             if (typeof err.message !== 'string') {
                 logMessage = JSON.stringify(err.message)
             }
-            logMessage += ` ${err.stack
-                .split('\n')
+            logMessage += ` ${err.stack?.split('\n')
                 .map((line: any) => {
                     if (
                         line.indexOf('node_modules') === -1 &&

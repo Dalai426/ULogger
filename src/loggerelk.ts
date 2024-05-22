@@ -82,8 +82,7 @@ export class ULoggerElk {
             if (typeof err.message !== 'string') {
                 logMessage = JSON.stringify(err.message)
             }
-            logMessage += ` ${err.stack
-                .split('\n')
+            logMessage += ` ${err?.stack?.split('\n')
                 .map((line: any) => {
                     if (
                         line.indexOf('node_modules') === -1 &&
