@@ -12,7 +12,7 @@ export const jsonFormatter = function jsonFormatter(logEntry: any): any {
 
 
     const data=typeof logEntry?.metadata === 'string' ? logEntry?.metadata : JSON.stringify(logEntry?.metadata)
-    logEntry.message = `[${now}] msg:${message}, data:${data}`
+    logEntry.message = `[${now}] msg: ${message}, data: ${data}`
 
     return logEntry
 }
