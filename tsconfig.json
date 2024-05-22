@@ -1,18 +1,39 @@
+// {
+//     "compilerOptions": {
+//         "strict": true,
+//         "noImplicitAny": true,
+//         "esModuleInterop": true,
+//         "strictNullChecks": true,
+//         "target": "ES2022",
+//         "moduleResolution": "Node10",
+//         "module": "CommonJS",
+//         "declaration": true,
+//         "isolatedModules": true,
+//         "noEmit": true,
+//         "outDir": "dist"
+//     },
+//     "include": ["src"],
+//     "exclude": ["node_modules"]
+// }
+
 {
     "compilerOptions": {
-        "strict": true,
-        "noImplicitAny": true,
-        "esModuleInterop": true,
-        "strictNullChecks": true,
-        "target": "ES2022",
-        "moduleResolution": "Node10",
         "module": "CommonJS",
-        "declaration": true,
-        "isolatedModules": true,
-        "noEmit": true,
-        
-        "outDir": "dist"
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "ES2018",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["node_modules/*", "src/types/*"],
+            "@root/*": ["src/*"]
+        },
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
     },
-    "include": ["src"],
-    "exclude": ["node_modules"]
+    "include": ["src/**/*", "tests/**/*"]
 }
+  
